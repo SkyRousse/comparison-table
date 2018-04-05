@@ -133,7 +133,7 @@
 		'</th>' +
 		cells +
 		'</tr>';
-		
+
 		return html;
 	}
 
@@ -149,12 +149,14 @@
 		return html;
 	}
 
+	var priceCells;
+
 	// go through each product object in the comparisonProducts object
 	for (var product in comparisonProducts) {
 		if (!comparisonProducts.hasOwnProperty(product)) continue;
 
 		var obj = comparisonProducts[product];
-		var priceCells = buildPriceCells(obj.productLink, obj.img, obj.productName, obj.productPrice);
+		priceCells = buildPriceCells(obj.productLink, obj.img, obj.productName, obj.productPrice);
 		// for (var prop in obj) {
 		// 	//skip loop if the property is from prototype
 		// 	if(!obj.hasOwnProperty(prop)) continue;
