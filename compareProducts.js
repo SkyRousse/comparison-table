@@ -127,6 +127,7 @@ for (var product in comparisonProducts) {
 
 	var obj = comparisonProducts[product];
 	var priceCells = buildPriceCells(obj.productLink, obj.img, obj.productName, obj.productPrice);
+	console.log(priceCells);
 	// for (var prop in obj) {
 	// 	//skip loop if the property is from prototype
 	// 	if(!obj.hasOwnProperty(prop)) continue;
