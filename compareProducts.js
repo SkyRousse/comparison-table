@@ -133,6 +133,8 @@
 		'</th>' +
 		cells +
 		'</tr>';
+		
+		return html;
 	}
 
 	function buildPriceCells(link, img, name, price) {
