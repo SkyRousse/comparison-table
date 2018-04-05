@@ -121,3 +121,26 @@ var comparisionProducts = {
 	},
 
 }
+
+for (var product in comparisionProducts) {
+	if (!comparisionProducts.hasOwnProperty(product)) continue;
+
+	var obj = comparisionProducts[product];
+	for (var prop in obj) {
+		//skip loop if the property is from prototype
+		if(!obj.hasOwnProperty(prop)) continue;
+
+		console.log(prop + " = " + obj[prop] );
+	}
+}
+
+//build out functions like this to construct the table html
+function buildPriceCells() {
+	<td>
+		<a class="product-image" href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/w/swissgear-6677-scansmart-laptop-backpack-black-front-ref.jpg" alt="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"></a>
+		<h2 class="product-name"><a href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack">SWISSGEAR 6677 ScanSmart TSA Laptop Backpack</a></h2>
+		<div class="price-box">
+			<span class="regular-price"><span class="price">$85.00</span></span>
+		</div>
+	</td>
+}
