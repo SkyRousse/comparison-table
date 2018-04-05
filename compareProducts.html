@@ -1,0 +1,200 @@
+var featureIcons = {
+	multipanel_airflow: {
+		url:"https://www.swissgear.com/media/attricons/airflow-back-panel.svg"
+	}
+	headphone_port: {
+		url:"https://www.swissgear.com/media/attricons/headphone-cord-port.svg"
+	}
+	top_handle: {
+		url:"https://www.swissgear.com/media/attricons/premium-top-carry-handle.svg"
+	}
+	scan_smart: {
+		url:"https://www.swissgear.com/media/attricons/scan-smart.svg"
+	}
+	water_pocket: {
+		url: "https://www.swissgear.com/media/attricons/water-bottle-pocket.svg"
+	}
+	contoured_suspension: {
+		url: "https://www.swissgear.com/media/attricons/contoured-suspension.svg"
+	}
+	compression_straps: {
+		url: "https://www.swissgear.com/media/attricons/compression-straps.svg"
+	}
+	laptop_friendly: {
+		url: "https://www.swissgear.com/media/attricons/laptop-friendly-17.svg"
+	}
+	tablet_friendly: {
+		url: "https://www.swissgear.com/media/attricons/tablet-friendly.svg"
+	}
+}
+
+var comparisionProducts = {
+	6677_scanSmart = {
+	productName: "SWISSGEAR 6677 ScanSmart TSA Laptop Backpack",
+	productPrice: "$85.00",
+	productLink: "https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack",
+	rating:"4.8",
+	weight:"3.05",
+	laptopCompartment:"Fits up to 17 inch laptops",
+	icons: [
+						featuredIcons.multipanel_airflow.url,
+						featureIcons.headphone_port.url,
+						featureIcons.top_handle.url,
+						featureIcons.scan_smart.url,
+						featuredIcons.water_pocket.url,
+						featuredIcons.contoured_suspension.url,
+						featuredIcons.compression_straps.url,
+						featuredIcons.laptop_friendly.url,
+						featuredIcons.tablet_friendly.url
+						]
+
+	}
+}
+
+//build out functions like this to construct the table html
+function buildPriceCells() {
+	<td>
+		<a class="product-image" href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/w/swissgear-6677-scansmart-laptop-backpack-black-front-ref.jpg" alt="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"></a>
+		<h2 class="product-name"><a href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack">SWISSGEAR 6677 ScanSmart TSA Laptop Backpack</a></h2>
+		<div class="price-box">
+			<span class="regular-price"><span class="price">$85.00</span></span>
+		</div>
+	</td>
+}
+
+
+
+<div class="compare-products ">
+	<table class="data-table compare-table" id="product_comparison">
+		<colgroup>
+			<col width="1">
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+		</colgroup>
+		<tbody>
+			<tr class="product-shop-row top first odd">
+				<th>
+					<div class="compare-item-header">Price</div>
+				</th>
+				<td>
+					<a class="product-image" href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/w/swissgear-6677-scansmart-laptop-backpack-black-front-ref.jpg" alt="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack"></a>
+					<h2 class="product-name"><a href="https://www.swissgear.com/swissgear-6677-scansmart-tsa-laptop-backpack" title="SWISSGEAR 6677 ScanSmart TSA Laptop Backpack">SWISSGEAR 6677 ScanSmart TSA Laptop Backpack</a></h2>
+					<div class="price-box">
+						<span class="regular-price"><span class="price">$85.00</span></span>
+					</div>
+				</td>
+				<td>
+					<a class="product-image" href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-6752-scansmart-tsa-laptop-backpack', true)" title="SWISSGEAR 6752 ScanSmart TSA Laptop Backpack"><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/a/sa6752.i_noir_satin_front_refl_1.jpg" width="125" height="125" alt="SWISSGEAR 6752 ScanSmart TSA Laptop Backpack"></a>
+					<h2 class="product-name"><a href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-6752-scansmart-tsa-laptop-backpack', true)" title="SWISSGEAR 6752 ScanSmart TSA Laptop Backpack">SWISSGEAR 6752 ScanSmart TSA Laptop Backpack</a></h2>
+					<div class="price-box">
+						<span class="regular-price" id="product-price-679-compare-list-top"><span class="price">$85.00</span></span>
+					</div>
+				</td>
+				<td>
+					<a class="product-image" href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-18-5-scansmart-black', true)" title="SWISSGEAR 5709 Scansmart - Black"><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/a/sa5709_black_front_refl.jpg" width="125" height="125" alt="SWISSGEAR 5709 Scansmart - Black"></a>
+					<h2 class="product-name"><a href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-18-5-scansmart-black', true)" title="SWISSGEAR 5709 Scansmart - Black">SWISSGEAR 5709 Scansmart - Black</a></h2>
+					<div class="price-box">
+						<span class="regular-price" id="product-price-803-compare-list-top"><span class="price">$110.00</span></span>
+					</div>
+				</td>
+				<td class="last">
+					<a class="product-image" href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-5358-scansmart', true)" title="SWISSGEAR 5358 Scansmart "><img src="https://www.swissgear.com/media/catalog/product/cache/1/small_image/125x125/9df78eab33525d08d6e5fb8d27136e95/s/a/sa5358.c_black_front_refl_4.jpg" width="125" height="125" alt="SWISSGEAR 5358 Scansmart "></a>
+					<h2 class="product-name"><a href="#" onclick="setPLocation('https://www.swissgear.com/swissgear-5358-scansmart', true)" title="SWISSGEAR 5358 Scansmart ">SWISSGEAR 5358 Scansmart </a></h2>
+					<div class="price-box">
+						<span class="regular-price" id="product-price-1059-compare-list-top"><span class="price">$120.00</span></span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr class="odd">
+				<th><span class="nobr">Customer Rating</span></th>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td class="last">
+					<div class="std">
+					</div>
+				</td>
+			</tr>
+			<tr class="even">
+				<th><span class="nobr">Weight</span></th>
+				<td>
+					<div class="std">
+						<h2>WEIGHT</h2>
+						<p>3.05 lbs</p>
+					</div>
+				</td>
+				<td>
+					<div class="std">
+						<h2>WEIGHT</h2>
+						<p>3.0 lbs</p>
+					</div>
+				</td>
+				<td>
+					<div class="std">
+						<h2>WEIGHTS</h2>
+						<p>2.9 lbs</p>
+					</div>
+				</td>
+				<td class="last">
+					<div class="std">
+						<h2>WEIGHT</h2>
+						<p>2.95</p>
+					</div>
+				</td>
+			</tr>
+			<tr class="odd">
+				<th><span class="nobr">Laptop Compartment</span></th>
+				<td>
+					<div class="std">
+						Fits up to 17 inch laptops </div>
+				</td>
+				<td>
+					<div class="std">
+						Fits up to 15 inch laptops </div>
+				</td>
+				<td>
+					<div class="std">
+						Fits up to 15 inch laptops </div>
+				</td>
+				<td class="last">
+					<div class="std">
+						Fits up to 15 inch laptops </div>
+				</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr class="add-to-row last odd">
+				<th>Features</th>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td>
+					<div class="std">
+					</div>
+				</td>
+				<td class="last">
+					<div class="std">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
