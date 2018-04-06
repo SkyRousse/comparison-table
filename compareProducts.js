@@ -184,6 +184,6 @@ for (var product in comparisonProducts) {
 
 // create the first row in the table
 var priceCells;
-var priceRow = buildRow("product-shop-row top first odd", priceCells, price);
+var priceRow = buildRow("product-shop-row top first odd", priceCells, "Price");
 var priceBody = buildTbody(priceRow);
 console.log(priceBody);
