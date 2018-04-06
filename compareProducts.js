@@ -125,14 +125,15 @@ var comparisonProducts = {
 
 //build out functions to construct the table html
 
-function buildRow(classNames, cells) {
+function buildTbody() {
+	var html =
+}
 
-	var html = 	'<tr class="' +classNames + '">' +
-	'<th>' +
-	'<div class="compare-item-header">Price</div>' +
-	'</th>' +
-	cells +
-	'</tr>';
+function buildRow(classNames, cells, th) {
+
+	if (th != null) var tableHeader = 	'<th><div class="compare-item-header">' + th + '</div></th>';
+
+	var html = 	'<tr class="' + classNames + '">' + tableHeader + cells + '</tr>';
 
 	return html;
 }
@@ -166,5 +167,5 @@ for (var product in comparisonProducts) {
 }
 
 // create the first row in the table
-var priceRow = buildRow("product-shop-row top first odd", priceCells);
+var priceRow = buildRow("product-shop-row top first odd", priceCells, price);
 console.log(priceRow);
