@@ -1,4 +1,6 @@
 
+///////////////////////////////
+//objects that table will be built from
 var featureIcons = {
   multipanel_airflow: {
     url: "https://www.swissgear.com/media/attricons/airflow-back-panel.svg",
@@ -123,18 +125,28 @@ var comparisonProducts = {
 
 }
 
-//build out functions to construct the table html
+///////////////////////////////
+//business logic
 
-function buildTbody() {
-	var html =
+function buildTable(){};
+
+function buildColumns(num, width) {
+	var columns = '<col width= "1">';
+	for (var i = 0; i < num; i++)  columns += '<col width="' + width +'">';
+	var html = '<colgroup>'+
+}
+
+function buildTbody(rows) {
+	var html = '<tbody>' + rows + '</tbody>';
 }
 
 function buildRow(classNames, cells, th) {
-
-	if (th != null) var tableHeader = 	'<th><div class="compare-item-header">' + th + '</div></th>';
-
-	var html = 	'<tr class="' + classNames + '">' + tableHeader + cells + '</tr>';
-
+	if (th != null) {
+		var tableHeader = 	'<th><div class="compare-item-header">' + th + '</div></th>';
+		var html = 	'<tr class="' + classNames + '">' + tableHeader + cells + '</tr>';
+	} else {
+		var html = 	'<tr class="' + classNames + '">' + cells + '</tr>';
+	}
 	return html;
 }
 
@@ -150,9 +162,11 @@ function buildPriceCells(link, img, name, price) {
 	return html;
 }
 
-var priceCells;
 
-// go through each product object in the comparisonProducts object
+///////////////////////////////
+//front-end logic
+
+// go through each product object in the comparisonProducts object to build table cells
 for (var product in comparisonProducts) {
 	if (!comparisonProducts.hasOwnProperty(product)) continue;
 
@@ -167,5 +181,7 @@ for (var product in comparisonProducts) {
 }
 
 // create the first row in the table
+var priceCells;
 var priceRow = buildRow("product-shop-row top first odd", priceCells, price);
+var priceBody = buildTbody(priceRow);
 console.log(priceRow);
