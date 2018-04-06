@@ -133,11 +133,13 @@ function buildTable(){};
 function buildColumns(num, width) {
 	var columns = '<col width= "1">';
 	for (var i = 0; i < num; i++)  columns += '<col width="' + width +'">';
-	var html = '<colgroup>'+
+	var html = '<colgroup>'+ columns + '<colgroup>';
+	return html;
 }
 
 function buildTbody(rows) {
 	var html = '<tbody>' + rows + '</tbody>';
+	return html;
 }
 
 function buildRow(classNames, cells, th) {
@@ -184,4 +186,4 @@ for (var product in comparisonProducts) {
 var priceCells;
 var priceRow = buildRow("product-shop-row top first odd", priceCells, price);
 var priceBody = buildTbody(priceRow);
-console.log(priceRow);
+console.log(priceBody);
